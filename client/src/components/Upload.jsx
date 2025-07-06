@@ -8,7 +8,7 @@ const Upload = () => {
 
   const searchTrailer = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/trailer?q=${query}`);
+      const res = await axios.get(`https://movie-trailer-e86d.onrender.com/api/trailer?q=${query}`);
       setTrailerUrl(res.data.trailerUrl);
     } catch (err) {
       alert("Trailer Not Found");

@@ -30,7 +30,7 @@ const Explore = () => {
   const searchTrailer = async (movieName) => {
     try {
       setQuery(movieName);
-      const res = await axios.get(`http://localhost:5000/api/trailer?q=${movieName}`);
+      const res = await axios.get(`https://movie-trailer-e86d.onrender.com/api/trailer?q=${movieName}`);
       setTrailerUrl(res.data.trailerUrl);
       setShowModal(true);
     } catch (err) {
